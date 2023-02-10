@@ -4,3 +4,5 @@ spring:
     port: 9042
     contact-points: 127.0.0.1
     local-datacenter: datacenter1
+    schema-action: CREATE_IF_NOT_EXISTS
+
