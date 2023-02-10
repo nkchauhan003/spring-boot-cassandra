@@ -5,4 +5,14 @@ spring:
     contact-points: 127.0.0.1
     local-datacenter: datacenter1
     schema-action: CREATE_IF_NOT_EXISTS
+  # SWAGGER
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v1/api-docs
+# LOGGING
+logging:
+  level:
+    com.cb: TRACE
 

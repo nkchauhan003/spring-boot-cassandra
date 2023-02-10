@@ -10,7 +10,8 @@ import org.springframework.data.cassandra.core.mapping.PrimaryKeyClass;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDate;
+
 
 @PrimaryKeyClass
 @AllArgsConstructor
@@ -23,7 +24,7 @@ public class WebAnalyticsPrimaryKey implements Serializable {
             type = PrimaryKeyType.PARTITIONED,
             ordering = Ordering.DESCENDING)
     @JsonFormat(pattern="yyyy-MM-dd")
-    private Date date;
+    private LocalDate date;
 
     @PrimaryKeyColumn(
             name = "site_id",
